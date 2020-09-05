@@ -1,0 +1,61 @@
+/* body {
+  font-family: JetBrains Mono;
+} */
+
+a {
+  display: none;
+}
+
+#td1 {
+  width: 900px;
+  height: 250px;
+  text-align: center;
+}
+
+#td2 {
+  width: 900px;
+  height: 250px;
+  text-align: center;
+}
+
+#td3 {
+  width: 900px;
+  height: 250px;
+  text-align: center;
+}
+
+#td4 {
+  width: 900px;
+  height: 250px;
+  text-align: center;
+}
+
+#monthly {
+  padding-left: 11px;
+  height: 200px;
+  width: 90%;
+}
+
+#education {
+  padding-left: 11px;
+  height: 200px;
+  width: 90%;
+}
+
+#position {
+  padding-left: 11px;
+  height: 200px;
+  width: 90%;
+}
+
+#department {
+  padding-left: 11px;
+  height: 200px;
+  width: 90%;
+}
+
+#DV1{
+  position: relative;
+  left: 900px;
+  top: 40px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function save() {
+			var N1 = document.getElementById('n1').value;
+			var PN1 = document.getElementById('pn1').value;
+			var BA1 = document.getElementById('ba1').value;
+			var B1 = document.getElementById('d1').value;
+			var T1 = document.getElementById('time').value;
+			var T2 = document.getElementById('time1').value;
+			var D1 = document.getElementById('date').value;
+
+			if (N1 == "") {
+				alert("Must be Enter Name");
+			}else if (PN1 == "") {
+				alert("Must be Enter PhoneNumber");
+			}else if (BA1 == "") {
+				alert("Must be Enter BankAccount");
+			}else if (B1 == "") {
+				alert("Must be Select Department");
+			}else if (T1 == "") {
+				alert("Must be Enter Time");
+			}else if (T2 == "") {
+				alert("Must be Enter Time");
+			}else if (D1 == "") {
+				alert("Must be Enter Date");
+			}else{
+				var Name = "Name: " + N1;
+				var PhoneNumber = "PhoneNumber: " + PN1;
+				var BankAccount = "Bank Account: " + BA1;
+				var Department = "Department: " + B1;
+				var Time = "Time: " + T1 + " - " + T2;
+				var Datee = "Date: " + D1;
+
+				var myWindow = window.open("","MsgWindow","width=300,height=200");
+				myWindow.document.write(Name + "<br>" + PhoneNumber + "<br>" + BankAccount + "<br>" + Department + "<br>" +Time + "<br>" + Datee);
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Form for Part Time</h1>
+	<form>
+		<div>
+			<span>Name: </span>
+			<input type="text" id="n1" name="username">
+		</div>
+		<br>
+		<div>
+			<span>PhoneNumber: </span>
+			<input type="text" id="pn1" name="userphonenumber">
+		</div>
+		<br>
+		<div>
+			<span>Bank Account: </span>
+			<input type="text" id="ba1" name="userbankaccount">
+		</div>
+		<br>
+		<div>
+			<span>Department: </span>
+			<select id="d1" name="userdepartment">
+				<option>---</option>
+				<option>Human Resourse</option>
+				<option>Sales</option>
+				<option>Manager</option>
+			</select>
+		</div>
+		<br>
+		<div>
+			<span>Time: </span>
+			<input type="Time" id="time" name="usertime">
+			<input type="Time" id="time1" name="usertime1">
+		</div>
+		<br>
+		<div>
+			<span>Date: </span>
+			<input type="Date" id="date" name="userdate">
+		</div>
+		<br>
+		<div>
+			<input type="submit" name="submit" onclick="save()">
+		</div>
+	</form>
+</body>
+</html>

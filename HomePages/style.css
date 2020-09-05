@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 80%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.top-right {
+  position: absolute;
+  right: 30px;
+}
+
+.dropbtn_Department {
+  background-color: #ccc;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 199px;
+  text-align: left;
+}
+
+.dropdown_Department {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_content_Department {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 199px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown_content_Department a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown_content_Department a:hover {background-color: #ddd;}
+
+.dropdown_Department:hover .dropdown_content_Department {display: block;}
+
+.dropdown_Department:hover .dropbtn_Department {background-color: #ddd;}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.images1 {
+  width: 198px;
+  overflow: hidden;
+  /* Image in the top left */
+  float: left;
+  margin-right: 10px;
+  max-height: 131px;
+}
+
+.images2 {
+  width: 188px;
+  overflow: hidden;
+  max-height: 121px;
+  border: 5px solid #FFF;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #900;
+  margin-bottom: 5px;
+}
+
+.title a:link{
+  color: #900;
+  text-decoration: none;
+}
+
+.title a:visited{
+  color: #900;
+  text-decoration: none;
+}
+
+.title a:hover{
+  color: #F00;
+  text-decoration: none;
+}
+
+.content {
+  line-height: 25px;
+}
+
+.news {
+  float: left;
+  width: 500px;
+  height: 300px;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+/* 
+tr{
+  height: 100px;
+  vertical-align: center;
+  text-align: left;
+} */

@@ -1,0 +1,147 @@
+Register Pages
+
+// Include config file
+// Define variables and initialize with empty values
+// Processing form data when form is submitted
+// Validate username
+// Prepare a select statement
+// Bind variables to the prepared statement as parameters
+// Set parameters
+// Attempt to execute the prepared statement
+/* store result */
+// Close statement
+// Validate password
+// Validate confirm password
+// Check input errors before inserting in database
+// Prepare an insert statement
+// Bind variables to the prepared statement as parameters
+// Set parameters
+// Creates a password hash
+// Attempt to execute the prepared statement
+// Redirect to login page
+// Close statement
+// Close connection
+
+//包含配置文件
+//定义变量并用空值初始化
+//提交表单时处理表单数据
+//验证用户名
+//准备一条选择语句
+//将变量作为参数绑定到准备好的语句
+//设置参数
+//尝试执行准备好的语句
+/ *存储结果* /
+//关闭语句
+//验证密码
+//验证确认密码
+//在插入数据库之前检查输入错误
+//准备插入语句
+//将变量作为参数绑定到准备好的语句
+//设置参数
+//创建密码哈希
+//尝试执行准备好的语句
+//重定向到登录页面
+//关闭语句
+//关闭连接
+
+login Pages
+
+// Initialize the session
+// Check if the user is already logged in, if yes then redirect him to welcome page
+// Include config file
+// Define variables and initialize with empty values
+// Processing form data when form is submitted
+// Check if username is empty
+// Check if password is empty
+// Validate credentials
+// Prepare a select statement
+// Bind variables to the prepared statement as parameters
+// Set parameters
+// Attempt to execute the prepared statement
+// Store result
+// Check if username exists, if yes then verify password
+// Bind result variables
+// Password is correct, so start a new session
+// Store data in session variables
+// Redirect user to welcome page
+// Display an error message if password is not valid
+// Display an error message if username doesn't exist
+// Close statement
+// Close connection
+
+//初始化会话
+//检查用户是否已经登录，如果是，则将其重定向到欢迎页面
+//包含配置文件
+//定义变量并用空值初始化
+//提交表单时处理表单数据
+//检查用户名是否为空
+//检查密码是否为空
+//验证凭证
+//准备一条选择语句
+//将变量作为参数绑定到准备好的语句
+//设置参数
+//尝试执行准备好的语句
+//存储结果
+//检查用户名是否存在，如果是，则验证密码
+//绑定结果变量
+//密码正确，因此开始新的会话
+//将数据存储在会话变量中
+//将用户重定向到欢迎页面
+//如果密码无效，则显示错误消息
+//如果用户名不存在，则显示错误消息
+//关闭语句
+//关闭连接
+
+logout Pages
+
+// Initialize the session
+// Unset all of the session variables
+// Destroy the session.
+// Redirect to login page
+
+//初始化会话
+//取消所有会话变量
+//销毁会话。
+//重定向到登录页面
+
+reset-password Pages
+
+// Initialize the session
+// Check if the user is logged in, if not then redirect to login page
+// Include config file
+// Define variables and initialize with empty values
+// Processing form data when form is submitted
+// Validate new password
+// Validate confirm password
+// Check input errors before updating the database
+// Prepare an update statement
+// Bind variables to the prepared statement as parameters
+// Set parameters
+// Attempt to execute the prepared statement
+// Password updated successfully. Destroy the session, and redirect to login page
+// Close statement
+// Close connection
+
+//初始化会话
+//检查用户是否已登录，如果未登录，则重定向到登录页面
+//包含配置文件
+//定义变量并用空值初始化
+//提交表单时处理表单数据
+//验证新密码
+//验证确认密码
+//在更新数据库之前检查输入错误
+//准备更新语句
+//将变量作为参数绑定到准备好的语句
+//设置参数
+//尝试执行准备好的语句
+//密码更新成功。 销毁会话，然后重定向到登录页面
+//关闭语句
+//关闭连接
+
+Welcome Pages
+
+// Initialize the session
+// Check if the user is logged in, if not then redirect him to login page
+
+//初始化会话
+//检查用户是否已登录，如果没有登录，则将其重定向到登录页面

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="orderfrom.css">
+	<script type="text/javascript">
+		function submit() {
+			var UP1 = document.getElementById("up1").value;
+			var Q1 = document.getElementById("q1").value;
+			var PC1 = document.getElementById("pc1").value;
+			var CPN1 = document.getElementById("cpn1").value;
+			var Cpn1 = CPN1.length;
+			var ON1 = document.getElementById("on1").value;
+			var On1 = ON1.length;
+
+			if (Cpn1 > 12 || Cpn1 < 11) {
+				alert("The PhoneNumber is Wrong");
+			}
+
+			if (On1 > 4) {
+				alert("The OrderNumber is Wrong");
+			}
+
+			// var TP1 = UP1 * Q1;
+			// var U1 = TP1 - PC1;
+			// var P1 = "Paid";
+			// var Up1 = "Unpaid";
+
+			// document.getElementById("tp1").innerHTML = TP1;
+			// document.getElementById("u1").innerHTML = U1;
+
+			// if (U1 == 0) {
+			// 	document.getElementById("ps1").innerHTML = P1;
+			// }else{
+			// 	document.getElementById("ps1").innerHTML = Up1;
+			// }
+
+			var r = /^\+?[1-9][0-9]*$/;
+      		if(!r.test(UP1)) {
+      			alert("Enter The Number in the Unit Price");
+      		}
+      		if(!r.test(Q1)) {
+      			alert("Enter The Number in the Quantity");
+      		}
+      		if(!r.test(PC1)) {
+      			alert("Enter The Number in the Prepaid Cash");
+      		}
+		}
+
+		function my() {
+			var UP1 = document.getElementById("up1").value;
+			var Q1 = document.getElementById("q1").value;
+			var PC1 = document.getElementById("pc1").value;
+
+			var TP1 = UP1 * Q1;
+			var U1 = TP1 - PC1;
+			var P1 = "Paid";
+			var Up1 = "Unpaid";
+
+			document.getElementById("tp1").innerHTML = TP1;
+			document.getElementById("u1").innerHTML = U1;
+
+			if (U1 == 0) {
+				document.getElementById("ps1").innerHTML = P1;
+			}else{
+				document.getElementById("ps1").innerHTML = Up1;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="d1">
+		<div>
+			<label>Date: </label>
+			<div>
+				<input type="Date" name="date">
+			</div>
+			<label style="display: none;">00000</label>
+		</div>
+
+		<div>
+			<label>Order Number: </label>
+			<div>
+				<input type="Text" name="ordernumber" id="on1">
+			</div>
+		</div>
+
+		<div>
+			<label>Product: </label>
+			<div>
+				<input type="Text" name="product">
+			</div>
+		</div>
+
+		<div>
+			<label>Employee Name: </label>
+			<div>
+				<input type="Text" name="employeename">
+			</div>
+		</div>
+
+		<div>
+			<label>Customer Name: </label>
+			<div>
+				<input type="Text" name="customername">
+			</div>
+		</div>
+
+		<div>
+			<label>Customer Phone Number: </label>
+			<div>
+				<input type="Text" name="customerphonenumber" id="cpn1">
+			</div>
+		</div>
+
+		<div>
+			<label>Unit Price: </label>
+			<div>
+				<input type="Text" name="unitprice" id="up1">
+			</div>
+		</div>
+
+		<div>
+			<label>Quantity: </label>
+			<div>
+				<input type="Text" name="quantity" id="q1">
+			</div>
+		</div>
+
+		<div>
+			<label>Prepaid Cash: </label>
+			<div>
+				<input type="Text" name="prepaidcash" id="pc1" onKeyUp="my()">
+			</div>
+		</div>
+
+		<div>
+			<br>
+			<input type="button" value="Calculation" onclick="submit()">
+		</div>
+
+		<div>
+			<label>Total Price: </label>
+			<output name="totalprice" id="tp1" readonly></output>
+		</div>
+
+		<div>
+			<label>Unpaid Cash: </label>
+			<output name="unpaidcash" id="u1" readonly></output>
+		</div>
+
+		<div>
+			<label>Payment Situstion: </label>
+			<output name="paymentsitustion" id="ps1" readonly></output>
+		</div>
+
+		<div>
+			<br>
+			<input type="submit" name="submit" value="Submit">
+		</div>
+	</div>
+
+	<table>
+		<tr>
+			<td>Date</td>
+			<td>Order Number</td>
+			<td>Product</td>
+			<td>Employee Name</td>
+			<td>Customer Name</td>
+			<td>Customer Phone Number</td>
+			<td>Unit Price</td>
+			<td>Quantity</td>
+			<td>Total Price</td>
+			<td>Prepaid Cash</td>
+			<td>Unpaid Cash</td>
+			<td>Payment Situstion</td>
+		</tr>
+
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>2</td>
+			<td>3</td>
+			<td>6</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+		</tr>
+	</table>
+	
+<!-- 	<input type="Text" name="totalprice" id="tp1">
+	<input type="Text" name="unpaidcash" id="u1">
+	<input type="Text" name="paymentsitustion" id="ps1"> -->
+
+</body>
+</html>

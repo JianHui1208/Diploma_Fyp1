@@ -1,0 +1,33 @@
+table {
+  border-spacing: 0.8rem;
+}
+td {
+  padding: 0.8rem;
+  min-width: 300px;
+  max-width: 400px;
+}
+#TD1 {
+  min-width: 180px;
+  max-width: 280px;
+}
+input {
+  background-color: hsl(160, 60%, 50%);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+input:hover {
+  background-color: hsl(170, 70%, 50%);
+}
+
+.tddeep {
+  background: #85c1e9;
+}
+
+.tdlow {
+  background: #aed6f1;
+}
